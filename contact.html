@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
+
+:root {
+    --accent: #00cc88;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+}
+header {
+    background: #111;
+    border-bottom: 3px solid var(--accent);
+    padding: 1.25rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+    color: white;
+}
+
+.logo .nepa, .logo .radio {
+    font-size: 2.3rem;
+}
+
+.logo .org {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 4rem 5%;
+}
+
+h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+p {
+    opacity: 0.85;
+    margin-bottom: 1.5rem;
+}
+.card {
+    background: #111;
+    border: 1px solid rgba(0,204,136,0.25);
+    padding: 2rem;
+    border-radius: 12px;
+}
+.discord-btn {
+    display: inline-block;
+    background: #5865F2;
+    color: white;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.discord-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+.copy-box {
+    margin-top: 1.5rem;
+    background: #0a0a0a;
+    border: 1px solid #2a2a2a;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+}
+.copy-btn {
+    margin-top: 1rem;
+    background: var(--accent);
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <span class="nepa">NEPA</span>
+        <span class="radio">FREQ</span>
+        <span class="org">.org</span>
+    </div>
+    <nav>
+        <a href="https://nepafreq.org">HOME</a>
+        <a href="https://nepafreq.org/freq">FREQUENCIES</a>
+        <a href="https://nepafreq.org/about">ABOUT</a>
+    </nav>
+</header>
+<main>
+<h1>Contact Us</h1>
+<div class="card">
+<p>
+The fastest way to reach NEPA FREQ is through our Discord community.
+        Join the server for updates, talk, and support.
+</p>
+<a class="discord-btn" href="https://discord.gg/QuCsh7W2jC" target="_blank">
+Join Our Discord Server
+</a>
+</div>
+</main>
+</script>
+</body>
+</html>
