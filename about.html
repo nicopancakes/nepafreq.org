@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About NEPA Radio - A clean, static frequency reference for Northeast Pennsylvania.">
+    <title>About Us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
+
+        :root {
+            --accent: #00cc88;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111111;
+            border-bottom: 3px solid var(--accent);
+            padding: 1.25rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: flex-end;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: #ffffff;
+            gap: 6px;
+        }
+
+        .logo .nepa,
+        .logo .radio {
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+
+        .logo .org {
+            font-size: 1.35rem;
+            font-weight: 500;
+            color: var(--accent);
+            padding-bottom: 7px;
+            line-height: 1;
+            letter-spacing: normal;
+        }
+
+        nav {
+            display: flex;
+            gap: 2.25rem;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            padding: 4rem 5%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        footer {
+            background: #111111;
+            text-align: center;
+            padding: 3rem 5%;
+            border-top: 3px solid var(--accent);
+            font-size: 1rem;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .logo .nepa,
+            .logo .radio { font-size: 2.15rem; }
+            .logo .org { font-size: 1.15rem; padding-bottom: 5px; }
+            nav { gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="nepa">NEPA</span>
+            <span class="radio">RADIO</span>
+            <span class="org">.org</span>
+        </div>
+        <nav>
+            <a href="https://neparadio.org">HOME</a>
+            <a href="https://neparadio.org/freq">FREQUENCIES</a>
+            <a href="https://neparadio.org/about">ABOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About NEPA Radio</h1>
+
+        <div class="section">
+            <p><strong>NEPA Radio</strong> is a simple, fast, and completely static reference site for radio frequencies in The Northeast Pennsylvania Area specifically Pike, Monroe, and Lackawanna counties.</p>
+        </div>
+
+        <div class="section">
+            <h2 style="font-size:1.6rem; margin-bottom:1rem; color:#ffffff;">Why this site exists</h2>
+            <p>NEPARADIO Was made by a Radio Enthusiast in 2025, and recently went public in 2026. This was made for scanner enthusiasts, amateur radio operators, and anyone who needs quick access to public safety channels in the region. All information is pulled from publicly available sources and verified manually.</p>
+        </div>
+
+        <div class="section">
+            <h2 style="font-size:1.6rem; margin-bottom:1rem; color:#ffffff;">What you’ll find here</h2>
+            <ul style="font-size:1.15rem; line-height:1.8; padding-left:1.5rem;">
+                <li>Police, fire, and EMS dispatch / Communication frequencies</li>
+                <li>Some Dept of Transportation Frequencies</li>
+                <li>NOAA Frequencies, and More.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 style="font-size:1.6rem; margin-bottom:1rem; color:#ffffff;">Disclaimer</h2>
+            <p>All frequencies listed are publicly monitored and legal to listen to in the United States. Always follow local laws regarding radio use. Data is updated as new information becomes available. We are not affiliated with any government or agency. Radio frequencies may be outdated or change without notice; use at your own responsibility and ensure legal compliance.</p>
+        </div>
+
+        <p style="opacity:0.7; font-size:1.05rem;">Last updated: April 2026</p>
+    </main>
+
+    <footer>
+        <p>NEPA Radio - neparadio.org</p>
+        <p>NEPA Radio is Not affiliated with any government or agency. Radio frequencies may be outdated or change without notice; use at your own responsibility and ensure legal compliance.</p>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.createElement("a");
+
+        btn.href = "https://taftonems.netlify.app";
+        btn.textContent = "View Active EMS/FIRE Incidents";
+
+        btn.style.position = "fixed";
+        btn.style.bottom = "18px";
+        btn.style.right = "18px";
+        btn.style.background = "#00cc88";
+        btn.style.color = "#0a0a0a";
+        btn.style.fontFamily = "Inter, sans-serif";
+        btn.style.fontWeight = "600";
+        btn.style.padding = "12px 16px";
+        btn.style.borderRadius = "10px";
+        btn.style.textDecoration = "none";
+        btn.style.zIndex = "9999";
+        btn.style.transition = "transform 0.2s ease, opacity 0.2s ease";
+
+        btn.addEventListener("mouseenter", () => {
+            btn.style.transform = "translateY(-2px)";
+            btn.style.opacity = "0.9";
+        });
+
+        btn.addEventListener("mouseleave", () => {
+            btn.style.transform = "translateY(0px)";
+            btn.style.opacity = "1";
+        });
+
+        document.body.appendChild(btn);
+    });
+    </script>
+
+</body>
+</html>
