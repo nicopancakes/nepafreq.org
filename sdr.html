@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is Software Defined Radio and how it works">
+    <title>What is SDR</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
+        :root {
+            --accent: #00cc88;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.7;
+        }
+        header {
+            background: #111111;
+            border-bottom: 3px solid var(--accent);
+            padding: 1.25rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: flex-end;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 600;
+            color: #ffffff;
+            gap: 6px;
+        }
+        .logo .nepa,
+        .logo .radio {
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+        .logo .org {
+            font-size: 1.35rem;
+            color: var(--accent);
+            padding-bottom: 7px;
+        }
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        main {
+            padding: 4rem 5%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 2rem;
+            color: #ffffff;
+        }
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: #ffffff;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+            opacity: 0.92;
+        }
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        .box {
+            background: #111111;
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem;
+            margin: 2rem 0;
+        }
+        /* IMAGE SECTION */
+        .image-box {
+            margin: 2rem auto;
+            display: flex;
+            justify-content: center;
+        }
+        .image-box img {
+            width: 300%;
+            max-width: 2000px;
+            display: block;
+            cursor: zoom-in;
+        }
+        /* LIGHTBOX ZOOM */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .lightbox img {
+            max-width: 95%;
+            max-height: 95%;
+            cursor: zoom-out;
+        }
+        footer {
+            background: #111111;
+            text-align: center;
+            padding: 3rem 5%;
+            border-top: 3px solid var(--accent);
+            font-size: 0.95rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <span class="nepa">NEPA</span>
+        <span class="radio">FREQ</span>
+        <span class="org">.org</span>
+    </div>
+    <nav>
+        <a href="https://nepafreq.org">HOME</a>
+        <a href="https://nepafreq.org/">FREQUENCIES</a>
+        <a href="https://nepafreq.org/about">ABOUT</a>
+    </nav>
+</header>
+<main>
+<h1>What is an SDR?</h1>
+<div class="box">
+<p>
+An SDR (Software Defined Radio) is a radio system that uses a small piece of hardware to catch radio signals and a computer to process and understand them instead of doing everything with traditional fixed electronic parts.
+</p>
+</div>
+
+<h2>Basic Idea of SDR</h2>
+<p>
+Traditional radios are built with special hardware that only works for certain frequencies. An SDR is much more flexible because the computer does most of the work.
+</p>
+<p>
+The hardware simply captures raw radio signals from the air. The computer and software then turn those signals into something you can hear or see.
+</p>
+
+<div class="image-box">
+    <img id="sdrImage" src="https://files.catbox.moe/dfrdd8.png"
+         alt="Radio frequency spectrum chart showing LF MF HF VHF UHF SHF and EHF bands across the electromagnetic spectrum">
+</div>
+
+<h2>How an SDR Works</h2>
+<ul>
+<li>An antenna picks up radio signals from the air</li>
+<li>The SDR device converts those signals into digital data</li>
+<li>The computer processes the data using special software</li>
+<li>The software shows you the audio, images, or other information</li>
+</ul>
+
+<h2>What Can I Receive Using an SDR?</h2>
+<h3>Local Signals</h3>
+<ul>
+<li>FM and AM radio stations</li>
+<li>Air traffic control conversations</li>
+<li>Aircraft positions using ADS-B</li>
+<li>Weather satellite images</li>
+<li>Ship movements and marine signals</li>
+</ul>
+
+<h3>Shortwave and HF Signals</h3>
+<ul>
+<li>International broadcast stations from around the world</li>
+<li>Amateur (ham) radio operators talking across countries</li>
+<li>Long-distance aviation and maritime communications</li>
+<li>Time and frequency standard signals</li>
+</ul>
+
+<h2>SDR vs Handheld Radios</h2>
+<ul>
+<li>Handheld radios are mainly used for two-way voice communication</li>
+<li>SDR is designed for listening to and exploring many different signals</li>
+<li>SDR shows you a visual display of the entire radio spectrum</li>
+<li>Handheld radios work on their own without a computer</li>
+</ul>
+
+<h2>Important Concepts</h2>
+<ul>
+<li><strong>Frequency</strong> – The specific “channel” where a signal lives</li>
+<li><strong>Bandwidth</strong> – How wide or narrow a signal is</li>
+<li><strong>Noise Floor</strong> – The background level of radio noise</li>
+<li><strong>Antenna Quality</strong> – A good antenna makes a big difference in what you can hear</li>
+</ul>
+</main>
+<footer>
+</footer>
+
+<div class="lightbox" id="lightbox">
+    <img src="https://files.catbox.moe/dfrdd8.png" alt="dfrdd8.png">
+</div>
+
+<script>
+const img = document.getElementById("sdrImage");
+const lightbox = document.getElementById("lightbox");
+img.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+});
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+</html>
