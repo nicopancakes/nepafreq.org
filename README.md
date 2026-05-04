@@ -6,3 +6,7 @@ Read [About Us](https://nepafreq.org/about), to Learn why NEPAfreq.org was Creat
 
 My Gear is Currently [Here](https://nepafreq.org/gear), and I'm Soon to Get a radioshack pro 433 Later this Year.
 
+REDIRECTS:
+
+[neparadio](https://neparadio.org)
+[tinyurl](https://tinyurl.com/y2uj8ba7)
