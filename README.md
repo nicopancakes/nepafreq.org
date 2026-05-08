@@ -10,3 +10,5 @@ REDIRECTS:
 
 [neparadio](https://neparadio.org)
 [tinyurl](https://tinyurl.com/y2uj8ba7)
+
+As an enthusiast in tioga county, I will continue to update frequently.
