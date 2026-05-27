@@ -4,7 +4,8 @@
 
 Read [About Us](https://nepafreq.org/about), to Learn why NEPAfreq.org was Created, and Who Specifically it Was Made For.
 
-My Gear is Currently [Here](https://nepafreq.org/gear), and I'm Soon to Get a radioshack pro 433 Later this Year.
+~~I'm Soon to Get a radioshack pro 433 Later this Year.~~ **Instead, I have gotten a Pro-2096.**
+
 
 REDIRECTS:
 
