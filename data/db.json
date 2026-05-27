@@ -113,7 +113,7 @@
     {"freq":"132.100", "service":"Airband", "county":"Pike", "desc":"En-Route Control Low Alt RCAG"},
     {"freq":"128.300", "service":"Airband", "county":"Pike", "desc":"En-Route Control Manta Low Sector"},
     {"freq":"128.675", "service":"Airband", "county":"Pike", "desc":"En-Route Control Douglaston NY RCAG"},
-    {"freq":"126.300", "service":"Airband", "county":"Pike", "desc":"Regional Approach & Departure Wilkes-Barre Appro/Depart for 101–279° radials"},    {"freq":"121.500", "service":"Guard Frequency", "county":"Airband", "desc":"MCTA Fixed Routes"},
+    {"freq":"126.300", "service":"Airband", "county":"Pike", "desc":"Regional Approach & Departure Wilkes-Barre Appro/Depart for 101–279° radials"},   
     {"freq":"122.200", "service":"Airband", "county":"Pike", "desc":"Regional Approach & Departure Wilkes-Barre Appro/Depart for 280–100° radials"},
     {"freq":"121.950", "service":"Airband", "county":"Pike", "desc":"Local Guard Frequency"},
     {"freq":"120.950", "service":"Airband", "county":"Pike", "desc":"Local FSS Regional Planning"},
