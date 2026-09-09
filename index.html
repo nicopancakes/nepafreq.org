@@ -1,71 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temporarily Unavailable</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 500px;
-      padding: 40px 25px;
-    }
-
-    .icon {
-      font-size: 50px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      margin: 0 0 15px;
-      font-size: 32px;
-    }
-
-    p {
-      margin: 8px 0;
-      color: #666;
-      font-size: 17px;
-      line-height: 1.6;
-    }
-
-    .notice {
-      margin-top: 25px;
-      padding: 15px;
-      background: #fff;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-    }
-  </style>
+<head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A Frequency Database for Northeast PA." name="description"/>
+    <meta content="https://nepafreq.org/src/ham.png" property="og:image"/>
+    <meta content="NEPARadio.org" name="author"/>
+    <meta content="https://nepafreq.org/src/ham.png" property="og:image"/>
+    <link href="https://nepafreq.org/src/favicon.ico" rel="shortcut icon" sizes="256x256" type="image/png"/>
+    <link href="https://nepafreq.org/src/favicon.ico" rel="icon" sizes="256x256" type="image/png"/>
+    <title>NEPAFreq.org</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link as="image" href="https://nepafreq.org/src/ham.png" rel="preload"/>
+    <link rel="stylesheet" href="/style.css">
+    <!--
+    // ⌄⌄⌄ Created by ApachE for Nepafreq.org | All Credits go to ApachE, Thank you ApachE for Creating this for NEPAFREQ.ORG. ⌄⌄⌄
+    -->
+     <script src="./data/block.js" defer></script>
+    <!--
+    // ^^^ Created by ApachE for Nepafreq.org | All Credits go to ApachE, Thank you ApachE for Creating this for NEPAFREQ.ORG. ^^^
+    -->
 </head>
 <body>
-  <main class="container">
-    <div class="icon"></div>
-
-    <h1>Website Temporarily Unavailable</h1>
-
-    <p>
-      Our website is currently down for maintenance due to a legal matter.
-    </p>
-
-    <div class="notice">
-      <p>We’re working to resolve the issue and expect to be back soon.</p>
-      <p>Thank you for your patience and understanding.</p>
+<header class="topbar">
+    <nav class="nav">
+        <a href="/" class="logo">NEPA<span class="accent">Freq.org</span></a>
+        <div class="links">
+            <a href="https://nepafreq.org" class="active">Home</a>
+            <a href="/about">About</a>
+            <a href="https://webcad.pikepa.org/pages/public/liveincidents.aspx" target="_blank">WebCAD</a>
+            <a href="https://webcad.pikepa.org/pages/public/feedreader.asp">Pike Press Feed WebCAD</a>
+            <a href="/contact">Contact</a>
+            <a href="/wdocs">Weather Docs</a>
+        </div>
+    </nav>
+</header>
+<section class="hero">
+    <h1>NEPA Frequencies</h1>
+    <p>NEPA Frequencies lists local radio frequencies for Northeast Pennsylvania.<br>Sponsored by www.ssb.surf 🏄‍♂️</p>
+</section>
+<main>
+    <h2 class="section-title">Our Database</h2>
+    
+    <div class="controls">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search by Term..">
+        </div>
+        <div class="county-filters">
+            <button class="filter-btn active" data-county="all">All</button>
+            <button class="filter-btn" data-county="Pike">Pike</button>
+            <button class="filter-btn" data-county="Monroe">Monroe</button>
+            <button class="filter-btn" data-county="Lackawanna">Lackawanna</button>
+            <button class="filter-btn" data-county="Wayne">Wayne</button>
+            <button class="filter-btn" data-county="NOAA">NOAA Weather Radio</button>
+        </div>
     </div>
-  </main>
+    <div class="table-container">
+        <table id="freqTable">
+            <thead>
+                <tr>
+                    <th>Frequency</th>
+                    <th>Service</th>
+                    <th>County</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</main>
+<footer>
+    <p><strong>Disclaimer:</strong> This database is compiled from publicly available sources for informational and educational purposes only. We do not guarantee accuracy or current validity of any frequencies.</p>
+    <p>This site is not affiliated with any government agency or company. Users must comply with all applicable laws.</p>
+    <p>© NEPA Freq</p>
+</footer>
+<script src="/script.js"></script>
+ 
 </body>
 </html>
+
+<img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fnepafreq.org&label=Visitors:&icon=hexagon&color=%23198754&message=&style=flat&tz=UTC">
+ 
