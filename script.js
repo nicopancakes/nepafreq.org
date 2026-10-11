@@ -14,7 +14,7 @@
       tbody.innerHTML = `
         <tr>
           <td colspan="4" style="text-align:center;padding:2.5rem;color:#c00;">
-            Error loading frequency database.
+            Error loading database,. This is a common issue if your using Public WiFi.
           </td>
         </tr>`;
     }
@@ -49,7 +49,7 @@
   function useDatabase() {
     if (window.DB && Array.isArray(window.DB.frequencies)) {
       frequencies = window.DB.frequencies;
-      console.log("[site] using database –", frequencies.length, "frequencies");
+      console.log("[site] using database -", frequencies.length, "frequencies");
       renderTable(frequencies);
       return true;
     }
